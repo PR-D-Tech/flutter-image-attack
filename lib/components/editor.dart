@@ -27,7 +27,7 @@ class _ImageAttackEditorState extends State<ImageAttackEditor> {
 
   Paint shapePaint = Paint()
     ..strokeWidth = 5
-    ..color = Colors.red
+    ..color = Colors.black
     ..style = PaintingStyle.stroke
     ..strokeCap = StrokeCap.round;
 
@@ -41,11 +41,11 @@ class _ImageAttackEditorState extends State<ImageAttackEditor> {
             text: TextSettings(
               focusNode: textFocusNode,
               textStyle: const TextStyle(
-                  fontWeight: FontWeight.bold, color: Colors.red, fontSize: 18),
+                  fontWeight: FontWeight.bold, color: Colors.black, fontSize: 20),
             ),
             freeStyle: const FreeStyleSettings(
-              color: Colors.red,
-              strokeWidth: 5,
+              color: Colors.black,
+              strokeWidth: 7,
             ),
             shape: ShapeSettings(
               paint: shapePaint,
