@@ -359,7 +359,7 @@ class _ImageAttackEditorState extends State<ImageAttackEditor> {
                         icon: Icon(
                           PhosphorIcons.scribble_loop,
                           color: controller.freeStyleMode == FreeStyleMode.draw
-                              ? Theme.of(context).accentColor
+                              ? Theme.of(context).colorScheme.secondary
                               : Colors.white,
                         ),
                         onPressed: toggleFreeStyleDraw,
@@ -368,7 +368,7 @@ class _ImageAttackEditorState extends State<ImageAttackEditor> {
                         icon: Icon(
                           PhosphorIcons.text_t,
                           color: textFocusNode.hasFocus
-                              ? Theme.of(context).accentColor
+                              ? Theme.of(context).colorScheme.secondary
                               : Colors.white,
                         ),
                         onPressed: addText,
@@ -403,7 +403,7 @@ class _ImageAttackEditorState extends State<ImageAttackEditor> {
                             child: Icon(
                               getShapeIcon(controller.shapeFactory),
                               color: controller.shapeFactory != null
-                                  ? Theme.of(context).accentColor
+                                  ? Theme.of(context).colorScheme.secondary
                                   : Colors.white,
                             ),
                           ),
@@ -412,7 +412,7 @@ class _ImageAttackEditorState extends State<ImageAttackEditor> {
                         IconButton(
                           icon: Icon(
                             getShapeIcon(controller.shapeFactory),
-                            color: Theme.of(context).accentColor,
+                            color: Theme.of(context).colorScheme.secondary,
                           ),
                           onPressed: () => {selectShape(null)},
                         ),
@@ -420,7 +420,7 @@ class _ImageAttackEditorState extends State<ImageAttackEditor> {
                         icon: Icon(
                           PhosphorIcons.eraser,
                           color: controller.freeStyleMode == FreeStyleMode.erase
-                              ? Theme.of(context).accentColor
+                              ? Theme.of(context).colorScheme.secondary
                               : Colors.white,
                         ),
                         onPressed: toggleFreeStyleErase,
