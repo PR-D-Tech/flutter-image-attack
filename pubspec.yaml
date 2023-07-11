@@ -11,7 +11,9 @@ dependencies:
   flutter:
     sdk: flutter
   plugin_platform_interface: ^2.0.2
-  flutter_painter: ^1.0.1
+  flutter_painter:
+    git:
+      url: https://github.com/Harishwarrior/flutter_painter.git
   flutter_phosphor_icons: ^0.0.1+6
 dev_dependencies:
   flutter_test:
